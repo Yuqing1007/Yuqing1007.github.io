@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>css进阶(二) | Yuqing's Study World</title><meta name="author" content="Yuqing_z"><meta name="copyright" content="Yuqing_z"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="css进阶11. 字体&amp;图标字体字体的相关样式 color：用来设置字体颜色  font-size：字体的 大小    相关单位：    ​        em 相对于当前元素的一个font-size    ​        rem 相对于根元素的一个font-size           font-family：字体的样式    可以同时指定多个字体，用，隔开，使用时优先选择前面的">
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>css进阶(二) | Yuqing's Study World</title><meta name="author" content="Yuqing_z"><meta name="copyright" content="Yuqing_z"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="css进阶11. 字体&amp;图标字体字体的相关样式 color：用来设置字体颜色  font-size：字体的 大小    相关单位：  em 相对于当前元素的一个font-size rem 相对于根元素的一个font-size            font-family：字体的样式    可以同时指定多个字体，用，隔开，使用时优先选择前面的    可选值：  serif：衬线字体 sans">
 <meta property="og:type" content="article">
 <meta property="og:title" content="css进阶(二)">
 <meta property="og:url" content="https://yuqing1007.github.io/2022/08/18/css2/index.html">
 <meta property="og:site_name" content="Yuqing&#39;s Study World">
-<meta property="og:description" content="css进阶11. 字体&amp;图标字体字体的相关样式 color：用来设置字体颜色  font-size：字体的 大小    相关单位：    ​        em 相对于当前元素的一个font-size    ​        rem 相对于根元素的一个font-size           font-family：字体的样式    可以同时指定多个字体，用，隔开，使用时优先选择前面的">
+<meta property="og:description" content="css进阶11. 字体&amp;图标字体字体的相关样式 color：用来设置字体颜色  font-size：字体的 大小    相关单位：  em 相对于当前元素的一个font-size rem 相对于根元素的一个font-size            font-family：字体的样式    可以同时指定多个字体，用，隔开，使用时优先选择前面的    可选值：  serif：衬线字体 sans">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://yuqing1007.github.io/img/css2.png">
 <meta property="article:published_time" content="2022-08-18T15:06:56.000Z">
-<meta property="article:modified_time" content="2022-08-28T10:02:24.119Z">
+<meta property="article:modified_time" content="2022-09-04T08:16:15.625Z">
 <meta property="article:author" content="Yuqing_z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://yuqing1007.github.io/img/css2.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://yuqing1007.github.io/2022/08/18/css2/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
@@ -52,7 +52,7 @@
   isHome: false,
   isHighlightShrink: undefined,
   isToc: true,
-  postUpdate: '2022-08-28 18:02:24'
+  postUpdate: '2022-09-04 16:16:15'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -141,52 +141,64 @@
       }
     }
     detectApple()
-    })(window)</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/css2.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Yuqing's Study World</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">css进阶(二)</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-08-18T15:06:56.000Z" title="Created 2022-08-18 23:06:56">2022-08-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-08-28T10:02:24.119Z" title="Updated 2022-08-28 18:02:24">2022-08-28</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">4.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>15min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="css进阶(二)"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="css进阶"><a href="#css进阶" class="headerlink" title="css进阶"></a>css进阶</h1><h3 id="11-字体-amp-图标"><a href="#11-字体-amp-图标" class="headerlink" title="11. 字体&amp;图标"></a>11. 字体&amp;图标</h3><h4 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h4><h5 id="字体的相关样式"><a href="#字体的相关样式" class="headerlink" title="字体的相关样式"></a>字体的相关样式</h5><ol>
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/css2.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Yuqing's Study World</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">css进阶(二)</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-08-18T15:06:56.000Z" title="Created 2022-08-18 23:06:56">2022-08-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-09-04T08:16:15.625Z" title="Updated 2022-09-04 16:16:15">2022-09-04</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">4.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>15min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="css进阶(二)"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="css进阶"><a href="#css进阶" class="headerlink" title="css进阶"></a>css进阶</h1><h3 id="11-字体-amp-图标"><a href="#11-字体-amp-图标" class="headerlink" title="11. 字体&amp;图标"></a>11. 字体&amp;图标</h3><h4 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h4><h5 id="字体的相关样式"><a href="#字体的相关样式" class="headerlink" title="字体的相关样式"></a>字体的相关样式</h5><ul>
 <li><p>color：用来设置字体颜色</p>
 </li>
 <li><p>font-size：字体的 大小</p>
 <p>   相关单位：</p>
-<p>   ​        em 相对于当前元素的一个font-size</p>
-<p>   ​        rem 相对于根元素的一个font-size         </p>
+<ul>
+<li>em 相对于当前元素的一个font-size</li>
+<li>rem 相对于根元素的一个font-size         </li>
+</ul>
 </li>
 <li><p>font-family：字体的样式</p>
 <p>   可以同时指定多个字体，用，隔开，使用时优先选择前面的</p>
 <p>   可选值：</p>
-<p>   ​        serif：衬线字体</p>
-<p>   ​        sans-serif：非衬线字体</p>
-<p>   ​        monospace：等宽字体  </p>
+<ul>
+<li>serif：衬线字体</li>
+<li>sans-serif：非衬线字体</li>
+<li>monospace：等宽字体 </li>
+</ul>
 <p>   这些值一般都写在最后</p>
 </li>
 <li><p>font-weight：字体的粗细</p>
 <p>   可选值：</p>
-<p>   ​        normal：默认值 不加粗</p>
-<p>   ​        bold：加粗</p>
-<p>   ​        100-900 九个级别（一般不用）</p>
+<ul>
+<li>normal：默认值 不加粗</li>
+<li>bold：加粗</li>
+<li>100-900 九个级别（一般不用）</li>
+</ul>
 </li>
 <li><p>font-style：字体样式</p>
 <p>   可选值：</p>
-<p>   ​        normal：正常</p>
-<p>   ​        italic：斜体</p>
+<ul>
+<li>normal：正常</li>
+<li>italic：斜体</li>
+</ul>
 </li>
 <li><p>font的简写属性</p>
 <p>   语法：</p>
-<p>   ​        <strong>font: 字体大小 字体族</strong></p>
-<p>   ​        <strong>font: 字体大小/行高 字体族</strong></p>
+<p>   <strong>font: 字体大小 字体族</strong></p>
+<p>   <strong>font: 字体大小/行高 字体族</strong></p>
 </li>
 <li><p>text-decoration文本修饰</p>
 <p>   可选值：</p>
-<p>   ​        none 无样式</p>
-<p>   ​        underline 下划线</p>
-<p>   ​        line-through 删除线</p>
-<p>   ​        overline 上划线</p>
+<ul>
+<li>none 无样式</li>
+<li>underline 下划线</li>
+<li>line-through 删除线</li>
+<li>overline 上划线</li>
+</ul>
 </li>
 <li><p>write-space 设置网页如何处理空白</p>
 <p>   可选值：</p>
-<p>   ​        normal 正常换行</p>
-<p>   ​        nowrap 不换行，显示很长的一行</p>
-<p>   ​        pre 保留多个空格或者换行，显示原有内容</p>
+<ul>
+<li>normal 正常换行</li>
+<li>nowrap 不换行，显示很长的一行</li>
+<li>pre 保留多个空格或者换行，显示原有内容</li>
+</ul>
 </li>
-</ol>
+</ul>
 <p>​    练习：为溢出文本加加…</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">    <span class="selector-class">.box</span>&#123;</span><br><span class="line">        <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">        <span class="comment">/*不换行*/</span></span><br><span class="line">        <span class="attribute">white-space</span>: nowrap;</span><br><span class="line">        <span class="comment">/*裁剪多余内容*/</span></span><br><span class="line">        <span class="attribute">overflow</span>: hidden;</span><br><span class="line">        <span class="comment">/*文本溢出后加……*/</span></span><br><span class="line">        <span class="attribute">text-overflow</span>: ellipsis;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
 
@@ -221,21 +233,35 @@
 <p>​        行高会在字体上下平均分配</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">40px</span>;</span><br><span class="line">    <span class="comment">/*line-height: 400px;*/</span></span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">3</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> green solid;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="字体框"><a href="#字体框" class="headerlink" title="字体框"></a>字体框</h4><p>​        字体框是字体存在的格子，设置font-size实际上是在设置字体框的高度  </p>
-<h4 id="文本的水平和垂直对齐"><a href="#文本的水平和垂直对齐" class="headerlink" title="文本的水平和垂直对齐"></a>文本的水平和垂直对齐</h4><p>text-align：文本的水平对齐方式</p>
-<p>​    可选值；</p>
-<p>​            left：左侧对齐</p>
-<p>​            right：右侧对齐</p>
-<p>​            center：居中对齐</p>
-<p>​            justify：两端对齐</p>
+<h4 id="文本的水平和垂直对齐"><a href="#文本的水平和垂直对齐" class="headerlink" title="文本的水平和垂直对齐"></a>文本的水平和垂直对齐</h4><ul>
+<li><p>text-align：文本的水平对齐方式</p>
+<p>可选值；</p>
+<ul>
+<li><p>left：左侧对齐</p>
+</li>
+<li><p>right：右侧对齐</p>
+</li>
+<li><p>center：居中对齐</p>
+</li>
+<li><p>justify：两端对齐</p>
+</li>
+</ul>
+</li>
+</ul>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">text-align</span>: center;</span><br></pre></td></tr></table></figure>
 
-<p>vertical-align：元素的垂直对齐方式</p>
-<p>​    可选值：</p>
-<p>​            baseline：默认值 基线对齐</p>
-<p>​            top：顶部对齐</p>
-<p>​            bottom：底部对齐</p>
-<p>​            middle：居中对齐</p>
-<p>​            直接指定值                  </p>
+<ul>
+<li><p>vertical-align：元素的垂直对齐方式</p>
+<p>可选值：</p>
+<ul>
+<li>baseline：默认值 基线对齐</li>
+<li>top：顶部对齐</li>
+<li>bottom：底部对齐</li>
+<li>middle：居中对齐</li>
+<li>直接指定值                  </li>
+</ul>
+</li>
+</ul>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">vertical-align</span>: bottom;                                               <span class="attribute">vertical-align</span>: <span class="number">100px</span>;</span><br></pre></td></tr></table></figure>
 
 <h3 id="12-背景"><a href="#12-背景" class="headerlink" title="12.背景"></a>12.背景</h3><h4 id="背景的相关样式"><a href="#背景的相关样式" class="headerlink" title="背景的相关样式"></a>背景的相关样式</h4><ul>
@@ -244,11 +270,13 @@
 <li><p>background-image：设置背景图片</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">../font/img/girl.jpg</span>);</span><br></pre></td></tr></table></figure></li>
 <li><p>background-repeat：设置背景的重复方式</p>
-<p>  ​    可选值：</p>
-<p>  ​        repeat：默认值，背景沿着x，y轴两个方向重复</p>
-<p>  ​        repeat-x：沿着x轴方向重复</p>
-<p>  ​        repeat-y：沿着y轴方向重复</p>
-<p>  ​        no-repeat：背景图片不重复                                                                          </p>
+<p>  可选值：</p>
+<ul>
+<li>repeat：默认值，背景沿着x，y轴两个方向重复</li>
+<li>repeat-x：沿着x轴方向重复</li>
+<li>repeat-y：沿着y轴方向重复</li>
+<li>no-repeat：背景图片不重复                                                                          </li>
+</ul>
 </li>
 <li><p>background-position：设置背景图片的位置</p>
 <ul>
@@ -261,28 +289,40 @@
 </li>
 <li><p>background-clip：设置背景的范围</p>
 <p>  可选值：</p>
-<p>  ​    border-box：默认值，背景会出现在边框的下边</p>
-<p>  ​    padding-box：背景不会出现在边框，只出现在内容区和内边距</p>
-<p>  ​    content-box：背景只出现在内容区                                        </p>
+<ul>
+<li>border-box：默认值，背景会出现在边框的下边</li>
+<li>padding-box：背景不会出现在边框，只出现在内容区和内边距</li>
+<li>content-box：背景只出现在内容区                                        </li>
+</ul>
 </li>
 <li><p>background-origin：背景图片的偏移量计算的原点</p>
 <p>  可选值：</p>
-<p>  ​        padding-box：默认值，background-position从内边距处开始计算</p>
-<p>  ​        content-box：背景图片的偏移量从内容区处计算</p>
-<p>  ​        border-box：从边框处开始计算                                                                    </p>
+<ul>
+<li>padding-box：默认值，background-position从内边距处开始计算</li>
+<li>content-box：背景图片的偏移量从内容区处计算</li>
+<li>border-box：从边框处开始计算                                                                    </li>
+</ul>
 </li>
 <li><p>background-size：设置背景图片的大小</p>
-<p>  ​    可以设置宽和高的一个值也可以设置两个值</p>
-<p>  ​    cover：图片比例不变，将元素铺满</p>
-<p>  ​    contain：图片比例不变，将图片在元素中完整显示   </p>
+<ul>
+<li>可以设置宽和高的一个值也可以设置两个值</li>
+</ul>
 </li>
-<li><p>background-attachment：背景元素是否</p>
+<li><p>cover：图片比例不变，将元素铺满</p>
+<ul>
+<li>contain：图片比例不变，将图片在元素中完整显示   </li>
+</ul>
+</li>
+<li><p>background-attachment：背景元素是否移动</p>
 <p>   可选值：</p>
-<p>   ​        scroll：默认值 背景元素随元素移动</p>
-<p>   ​        fixed：背景固定，不随元素移动                                                </p>
+<ul>
+<li>scroll：默认值 背景元素随元素移动</li>
+<li>fixed：背景固定，不随元素移动                                                </li>
+</ul>
 </li>
 <li><p>background：背景相关的简写属性，所有背景相关的样式都可以用该属性来设置</p>
-<p>   ​    没有顺序要求，可以随意写<br>   ​    注意：</p>
+<p>   没有顺序要求，可以随意写</p>
+<p>   注意：</p>
 <ul>
 <li>background-size必须写在background-position后边，并用/隔开，及background-position/background-size</li>
 <li>ackground-origin必须写在background-clip前</li>
@@ -293,14 +333,16 @@
 <ol>
 <li><p>linear-gradient()：线性渐变</p>
 <p>可以指定渐变的方向和多个颜色颜色</p>
-<p>​    方向：</p>
-<p>​            to left</p>
-<p>​            to right</p>
-<p>​            to bottom:默认</p>
-<p>​            to top</p>
-<p>​            to top left </p>
-<p>​            指定度数：xxdeg（eg.  45deg）</p>
-<p>​            指定圈数：xxturn（eg.  .5turn/.25turn）    </p>
+<p>方向：</p>
+<ul>
+<li>to left</li>
+<li>to right</li>
+<li>to bottom:默认</li>
+<li>to top</li>
+<li>to top left </li>
+<li>指定度数：xxdeg（eg.  45deg）</li>
+<li>指定圈数：xxturn（eg.  .5turn/.25turn）    </li>
+</ul>
 </li>
 </ol>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*从上到下渐变*/</span>                                                    </span><br><span class="line">*<span class="attribute">background-image</span>: <span class="built_in">linear-gradient</span>(red,yellow);</span><br><span class="line"><span class="comment">/*从左到右渐变*/</span></span><br><span class="line"><span class="attribute">background-image</span>: <span class="built_in">linear-gradient</span>(to right,red,yellow);</span><br></pre></td></tr></table></figure>
@@ -309,20 +351,22 @@
 </ol>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">background-image</span>: <span class="built_in">repeating-linear-gradient</span>(red <span class="number">0px</span>,yellow <span class="number">100px</span>);                                               </span><br></pre></td></tr></table></figure>
 <ol start="3">
-<li>radial-gradient()：径向渐变</li>
+<li><p>radial-gradient()：径向渐变</p>
+<p>默认情况下径向渐变的形状根据元素的形状来自动改变</p>
+<p>可以手动设置径向渐变的范围，或形状</p>
+<p>形状可以自定义大小，也可以选择值、</p>
+<p>可选值：</p>
+<ul>
+<li>circle：圆形</li>
+<li>ellipse：椭圆</li>
+<li>closest–side：近边</li>
+<li>closest-corner：近角</li>
+<li>farthest-side：远边</li>
+<li>farthest-corner：远角</li>
+</ul>
+</li>
 </ol>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">background-image</span>: <span class="built_in">radial-gradient</span>(red,yellow);</span><br></pre></td></tr></table></figure>
-<p>​    默认情况下径向渐变的形状根据元素的形状来自动改变</p>
-<p>​    可以手动设置径向渐变的范围，或形状</p>
-<p>​    形状可以自定义大小，也可以选择值、</p>
-<p>​        可选值：</p>
-<p>​                circle：圆形</p>
-<p>​                ellipse：椭圆</p>
-<p>​                closest–side：近边</p>
-<p>​                closest-corner：近角</p>
-<p>​                farthest-side：远边</p>
-<p>​                farthest-corner：远角</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">background-image</span>: <span class="built_in">radial-gradient</span>(<span class="number">300px</span> <span class="number">100px</span>,red,yellow);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">background-image</span>: <span class="built_in">radial-gradient</span>(red,yellow);</span><br><span class="line"><span class="attribute">background-image</span>: <span class="built_in">radial-gradient</span>(<span class="number">300px</span> <span class="number">100px</span>,red,yellow);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>​            也可以指定渐变中心的位置</p>
 <p>​            at 后加位置</p>
 <p>​                <strong>语法：</strong>radial-gradient(形状 at 位置, 颜色 位置, 颜色 位置, )</p>
